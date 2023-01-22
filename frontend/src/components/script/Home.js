@@ -44,16 +44,14 @@ function Home(){
     if(!token){
         navigate("signup")
     } 
-
     //fetching data of all posts using get api
-fetch("/allPosts",{
-  headers:{
-    "Content-Type":"application/json",
-    "Authorization":""+localStorage.getItem("jwt")
-  }
-}).then(resp=>resp.json())
-.then(result=>setData(result))
-.catch(err=>console.log(err));
+      fetch("/allPosts",{
+        headers:{
+          "Authorization":""+localStorage.getItem("jwt")
+        }
+      }).then(resp=>resp.json())
+      .then(result=>setData(result))
+      .catch(err=>console.log(err));
 
   },[]);
 
