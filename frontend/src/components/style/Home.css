@@ -1,0 +1,110 @@
+.card{
+    max-width: 500px;
+    height:fit-content;
+    margin:25px auto 45px auto;
+    border: 1px solid rgb(173,173,173);
+}
+.header{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding: 5px;
+    
+}
+
+.header img{
+    width:40px;
+    border-radius: 100px;
+}
+.header>h5{
+    padding: 5px;
+}
+.post-content{
+    padding:5px;
+    border-bottom: 1px solid rgb(173,173,173);
+}
+.post-image>img{
+    width: 100%;
+}
+.comment{
+    display: flex;
+    align-items: center;    
+    width: 100%;
+}
+.comment>input{
+    width:100%;
+    border: none;
+    padding:8px;
+}
+.comment>button{
+    border: none;
+    margin:0px 5px;
+    font-weight: bolder;
+    background-color: none;
+    color:rgb(9, 148, 228);
+}
+.unlike {
+    color:red;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 900,
+  'GRAD' 0,
+  'opsz' 48
+}
+.material-symbols-outlined{
+    cursor:pointer;
+}
+.showComment{
+    width:100vw;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(162, 162, 162, 0.8);
+}
+.container{
+    display: flex;
+    width: 80%;
+    position: absolute;
+    background-color: white;
+    top: 10%;
+    left: 10%;
+    height:600px;
+}
+.postPic{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+.postPic img{
+    object-fit: contain;
+    width:100%;
+    height:600px;
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+.commentSection{
+    flex-grow: 4;
+}
+.com{
+    margin: 10px;
+}
+.closeComment{
+    position: absolute;
+    top: 1%;
+    right:1%;
+    cursor: pointer;
+}
+.material-symbols-outlined-closeBt {
+    font-size: 50px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 900,
+  'GRAD' 0,
+  'opsz' 48
+}

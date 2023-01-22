@@ -1,0 +1,32 @@
+.singin-form-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    height:98.5vh;
+    background-color: rgb(247, 247, 247);
+}
+.signin-form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0px 30px 0px 30px;
+    margin-top: 50px;
+    width:280px;
+    height:350px;
+    border:1px solid rgb(219, 219, 219);
+    border-radius: 4px;
+    background-color: white;
+}
+.signin-form>div>button{
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    font-weight: 700;
+    width:280px;
+    height:35px;
+    margin-top: 15px;
+    background-color: rgb(28, 192, 241);
+    border-radius: 10px;
+    cursor: pointer;
+}
