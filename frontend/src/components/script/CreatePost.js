@@ -15,7 +15,7 @@ function CreatePost(){
   useEffect(()=>{
     //saving post to mongodb
     if(url){
-      fetch("http://localhost:5000/createPost",{
+      fetch("/createPost",{
         method:'post',
         headers:{
           "Content-Type":"application/json",

@@ -46,7 +46,7 @@ function Home(){
     } 
 
     //fetching data of all posts using get api
-fetch("http://localhost:5000/allPosts",{
+fetch("/allPosts",{
   headers:{
     "Content-Type":"application/json",
     "Authorization":""+localStorage.getItem("jwt")
@@ -59,7 +59,7 @@ fetch("http://localhost:5000/allPosts",{
 
   //Like post
   const likePost = (id)=>{
-      fetch("http://localhost:5000/likes",{
+      fetch("/likes",{
         method:"put",
         headers:{
           "Authorization":""+localStorage.getItem("jwt"),
@@ -83,7 +83,7 @@ fetch("http://localhost:5000/allPosts",{
 
   //UnLike post
   const unlikePost = (id)=>{
-    fetch("http://localhost:5000/unlikes",{
+    fetch("/unlikes",{
       method:"put",
       headers:{
         "Authorization":""+localStorage.getItem("jwt"),
